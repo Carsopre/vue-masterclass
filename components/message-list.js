@@ -15,7 +15,7 @@ Vue.component('message-list', {
                 No messages
             </div>
 
-            <ol class="message-list__list">
+            <transition-group class="message-list__list" name="slide" tag="ol">
                 <template v-for="message of messages">
                     <text-message 
                         v-if="message.type === 'text'"
