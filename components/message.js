@@ -20,12 +20,12 @@ Vue.component('message', {
     template : `
         <li class="message">
             <div class="message__header">
-                <img src="images/avatar.png" class="message__avatar"> 
-                <strong>Anoniempje</strong> 
-                <span class="message__date">11:23:09</span>
+                <img src="user.avatar" class="message__avatar"> 
+                <strong>{{user.name}}</strong> 
+                <span class="message__date">{{date}}</span>
             </div>
             <div class="message__content">
-                hello world
+                {{text}}
             </div>
         </li>
     `
